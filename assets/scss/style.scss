@@ -1,0 +1,425 @@
+//Import files
+@import "base";
+@import "variable";
+@import "mixin";
+@import "exception";
+
+
+
+/*==========================
+      start  header area
+===========================*/
+.header {
+   padding: 20px 0;
+}
+
+/*==========================
+      end  header area
+===========================*/
+
+
+
+
+
+/*==========================
+      start banner   area
+===========================*/
+.bn-banner-section {
+   padding: 130px 0;
+
+   @media (max-width:1200px) {
+      padding: 70px 0;
+   }
+
+   @media (max-width:992px) {
+      padding: 30px 0;
+      text-align: center;
+   }
+
+   background-image: url("../img/banner_bg_1.png");
+   @include background-content();
+}
+
+.bn-banner-caption {
+   .banner-title {
+      color: #fff;
+      line-height: 48px;
+      font-size: 30px;
+      margin: 0 0 45px;
+
+      @media (max-width:1200px) {
+         font-size: 24px;
+         line-height: calc(100% + 12px);
+         margin-bottom: 15px;
+      }
+   }
+
+   .banner-subtitle {
+      color: $white-color;
+      margin: 0 0 45px;
+
+      @media (max-width:1200px) {
+         margin-bottom: 25px;
+      }
+   }
+
+   .banner-details {
+      li {
+         font-family: $font-roboto;
+         color: $white-color;
+         font-style: italic;
+         position: relative;
+         list-style-position: inside;
+         margin-bottom: 25px;
+
+         @media (max-width:1200px) {
+            margin-bottom: 15px;
+         }
+
+      }
+   }
+}
+
+.banner-gallery-img {
+   position: relative;
+
+   @media (max-width:576px) {
+      max-height: 250px;
+      height: auto;
+      margin-top: 15px;
+   }
+
+   video {
+      background-color: $white-color;
+      height: 340px;
+
+      @media (max-width:1200px) {
+         height: auto;
+      }
+   }
+
+   .video-ply-btn {
+      color: $white-color;
+      font-size: 30px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: $primary-color;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 100px;
+      text-align: center;
+
+      &:hover {
+         background-color: $secondary-color;
+      }
+   }
+}
+
+/*==========================
+      end  banner  area
+===========================*/
+
+
+
+
+
+/*==========================
+      start  cta  area
+===========================*/
+.cta-section {
+   padding: 62px 0;
+}
+
+.cta-wrap {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+
+   @media (max-width:992px) {
+      display: block;
+      text-align: center;
+   }
+}
+
+.cta-title {
+   font-family: $font-roboto;
+   font-weight: 300;
+   font-size: 30px;
+   margin: 0 0 0;
+
+   @media (max-width:992px) {
+      font-size: 24px;
+   }
+
+   span {
+      font-weight: 700;
+   }
+}
+
+/*==========================
+      end cta  area
+===========================*/
+
+
+
+
+
+/*==========================
+      start about intro   area
+===========================*/
+.about-intro-section {
+   background-image: url("../img/about_bg_1.png");
+   @include background-content();
+   padding: 80px 0 30px;
+
+   @media (max-width:992px) {
+      padding: 40px 0 30px;
+   }
+}
+
+.about-intro-caption {
+   .title-1 {
+      margin: 0 0 50px;
+
+      @media (max-width:992px) {
+         margin-bottom: 25px;
+         font-size: 26px;
+         line-height: calc(100% + 10px);
+      }
+   }
+
+   p {
+      @media (max-width:992px) {
+         margin-bottom: 12px;
+      }
+
+   }
+}
+
+.about-intro-img {
+   .intro-img {
+      background-color: $white-color;
+      box-shadow: 35.967px 34.733px 84px 0px rgba(0, 0, 0, 0.05);
+
+      @media (max-width:992px) {
+         box-shadow: 0px 0px 84px 0px rgba(0, 0, 0, 0.05);
+      }
+   }
+}
+
+/*==========================
+      end   about intro area
+===========================*/
+
+
+
+
+
+/*==========================
+      start feature   area
+===========================*/
+
+.feature-section {
+   padding-top: 60px;
+   padding-bottom: 40px;
+}
+
+.item-icon {
+   margin: 0 0 40px;
+}
+
+.title-2 {
+   color: $primary-color;
+   margin: 0 0 30px;
+
+   @media (max-width:768px) {
+      margin: 0 0 30px;
+   }
+
+   a {
+      color: $primary-color;
+      font-size: 30px;
+      line-height: 48px;
+
+      @media (max-width:768px) {
+         font-size: 22px;
+         line-height: calc(100% + 10px);
+      }
+
+      &:hover {
+         color: $secondary-color;
+      }
+   }
+}
+
+.feature-section-2 {
+   .title-2 {
+      color: $primary-color;
+      font-size: 24px;
+      line-height: 32px;
+
+      @media (max-width:768px) {
+         font-size: 22px;
+         line-height: calc(100% + 10px);
+      }
+   }
+
+   img {
+      height: 100px;
+      object-fit: contain;
+      object-position: center;
+   }
+}
+
+/*==========================
+   end feature area
+===========================*/
+
+
+
+
+/*==========================
+  start service area
+===========================*/
+.service-section {
+   @media (max-width:1500px) {
+      padding: 50px 0;
+   }
+
+   @media (max-width:992px) {
+      text-align: center;
+   }
+
+   .serviceTop {
+      position: relative;
+
+      @media (min-width:1500px) {
+         padding-top: 240px;
+      }
+
+      .serviceTopRight {
+         @media (min-width:992px) {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            @media (max-width:1500px) {
+               top: 50%;
+               transform: translateY(-50%);
+            }
+         }
+      }
+   }
+
+   .serviceBottom {
+      position: relative;
+
+      .serviceBottomRight {
+         @media (max-width:992px) {
+            text-align: center;
+            margin-top: 20px;
+         }
+      }
+
+      @media (min-width:992px) {
+         .serviceBottomLeft {
+            position: absolute;
+            left: 0;
+            top: 100px;
+         }
+      }
+
+      .serviceBottomRight {
+         @media (min-width:1600px) {
+            margin-right: 18vw;
+         }
+
+         @media (max-width:1600px) and (min-width:1100px) {
+            margin-right: 25vw;
+         }
+
+         @media (max-width:1100px) and (min-width:992px) {
+            margin-right: 20vw;
+         }
+      }
+   }
+}
+
+.single-blocks {
+   margin: 0 0 50px;
+}
+
+/*==========================
+      end service   area
+===========================*/
+
+
+
+
+/*==========================
+      start follow  area
+===========================*/
+.follow-up-section {
+   padding: 80px 0;
+
+   @media (max-width:992px) {
+      text-align: center;
+      padding: 40px 0;
+   }
+}
+
+/*==========================
+   end follow  area
+===========================*/
+
+
+
+
+
+/*==========================
+   start mission cta area
+===========================*/
+.mission-section {
+   padding-top: 80px;
+   padding-bottom: 60px;
+   background: url(../img//wizardbg.png);
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+
+   @media (max-width:1600px) {
+      background-color: $primary-color;
+
+      .mission-section-row {
+         align-items: center;
+      }
+   }
+}
+
+.m-part-1 {
+   padding-bottom: 30px;
+}
+
+/*==========================
+      end  mission cta  area
+===========================*/
+
+
+
+
+
+
+/*==========================
+      start   area
+===========================*/
+.mission-section {
+   padding: 70px 0;
+}
+
+/*==========================
+      end   area
+===========================*/

@@ -1,0 +1,169 @@
+@media only screen and (max-width: 1024px) {
+    .banner-video-wrap {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .bn-banner-caption {
+        margin-bottom: 50px;
+    }
+
+    .benifit-title {
+        margin-left: 75px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .banner-video-wrap {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .bn-banner-caption {
+        margin-bottom: 50px;
+    }
+
+    .benifit-title {
+        margin-left: 75px;
+    }
+
+    .bn-banner-caption .banner-subtitle {
+        text-align: left;
+    }
+
+    ul.banner-details {
+        text-align: left;
+    }
+
+    .about-intro-img .intro-img {
+        display: none;
+    }
+
+    .service-section .serviceBottom {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .btn-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bn-banner-caption .banner-title {
+        line-height: 40px;
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .cta-title {
+        font-size: 25px;
+    }
+
+    .about-intro-caption .title-1 {
+        font-size: 25px;
+    }
+
+    .content-block .content-title.title-3 {
+        font-size: 25px;
+    }
+
+    .sectionTitle h3 {
+        font-size: 27px;
+    }
+
+    .favoriteIntegrations {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .bn-banner-caption .banner-title {
+        font-size: 22px;
+    }
+
+    .content-img {
+        text-align: center;
+    }
+
+    .benifit-section {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .serviceTopRightImgPlot {
+        margin-bottom: 50px;
+    }
+
+    .content-block .content-title.title-3 {
+        font-size: 22px;
+    }
+
+    .content-block .content-title {
+        font-size: 22px;
+    }
+
+    .common-title h2 {
+        font-size: 25px;
+    }
+
+    .businessOwners,
+    .about-intro-section {
+        background: initial;
+        background: #fff;
+    }
+
+    .favoriteIntegrations .favoriteIntegrations-title {
+        font-size: 25px;
+    }
+
+    .access-btn {
+        padding: 7px 20px;
+    }
+
+    .title-2 a {
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .header .logo {
+        margin-bottom: 50px !important;
+    }
+
+    .btn-wrap {
+        text-align: left;
+        display: block;
+    }
+
+    .btn-wrap a {
+        margin-bottom: 10px;
+    }
+
+    .bn-banner-caption .banner-title {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .content-block .content-title.title-3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .common-title h2 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .sectionTitle h3 {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .favoriteIntegrations .favoriteIntegrations-title {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+}
